@@ -181,6 +181,14 @@ body {
   color: var(--dk-gray-400);
 }
 
+.uil-envelope-shield:before,
+.uil-file:before,
+.uil-users-alt:before
+ {
+  position:relative;
+  top:12px;
+}
+
 /** --------------------------------
  -- Charts
 -------------------------------- */
@@ -248,6 +256,13 @@ body {
   color: #ffc107;
 }
 
+.statis .box i.uil-eye:before,
+.statis .box i.uil-user:before,
+.statis .box i.uil-shopping-cart:before,
+.statis .box i.uil-feedback:before{
+  position: relative;
+  top: 18px;
+}
 /** --------------------------------
  -- Please don't do that in real-world projects!
  -- overwrite Bootstrap variables instead.
@@ -328,7 +343,12 @@ body {
   padding-right: 5px !important;
 }
 .navbar .navbar-nav > li > a > i {
-  font-size: 18px !important;
+  font-size: 18px;
+}
+.navbar .navbar-nav > li > a > i.uil-bars {
+  font-size: 24px;
+    position: relative;
+    top: 12px;
 }
 
 /* Start media query */
